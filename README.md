@@ -1,6 +1,19 @@
+
+
+<p style="text-align: center;">
+  <img src="https://camo.githubusercontent.com/bf2ee1872641c33f8c9cf0df9cad0e4fc271d1a8c1828f0aefe1048523bda0ec/68747470733a2f2f71696b73657276652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f31312f426c75652d4c6f676f2e706e67" alt="Logo" />
+</p>
+
+
+<p align = "center">
+    <img src = "https://img.shields.io/badge/Made%20by-Thiago%20Carvalho-orange" alt = "Thiago Carvalho">
+    <img src = "https://img.shields.io/badge/License-MIT-blue.svg" alt = "Licença MIT">
+    <img src = "https://img.shields.io/badge/Project%20Lang-Portugueses%20BR-green" alt = "Project Lang">
+</p>
+
 # Nome do Projeto QikServe
 
-## Descrição
+## 📝 Descrição
 
 Este projeto é uma implementação de teste para a posição de desenvolvedor frontend na QikServe. Ele demonstra uma aplicação de pedido de alimentos com funcionalidades de adicionar itens ao carrinho, alterar quantidades, calcular totais e se adapta para dispositivos móveis e desktop.
 
