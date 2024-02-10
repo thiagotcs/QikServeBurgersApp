@@ -58,15 +58,24 @@ Graduado em Sistemas para Internet, tenho uma sólida base teórica e uma aborda
 <img width="1680" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/6a437cc4-245a-4443-932f-7dad716449a8">
 <img width="1680" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/835bae3b-dffc-46ab-9dd2-540e3356d99d">
 <img width="1680" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/a1fc4123-8594-4b0d-aa84-d4cab762e566">
-<img width="386" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/0c5f9dad-74dc-4fef-b788-863df130bedc">
-<img width="389" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/108e7aa8-b2cc-466f-99bb-a0f79b748f69">
-<img width="406" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/877f052a-2fbe-4cae-bb47-b191c8852a3b">
-<img width="391" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/8b5e1871-794e-435d-9439-5ba04fec83f3">
-<img width="396" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/b1772a96-68d2-4241-acae-5d57bce97214">
 
 
 
+<p align="center">
+  <img width="355" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/0c5f9dad-74dc-4fef-b788-863df130bedc">
+<img width="355" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/108e7aa8-b2cc-466f-99bb-a0f79b748f69">
 
+</p>
 
+<p align="center">
+  <img width="355" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/877f052a-2fbe-4cae-bb47-b191c8852a3b">
+<img width="355" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/8b5e1871-794e-435d-9439-5ba04fec83f3">
+
+</p>
+
+<p align="center">
+  <img width="355" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/b1772a96-68d2-4241-acae-5d57bce97214">
+<img width="355" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/b1772a96-68d2-4241-acae-5d57bce97214">
+</p>
 
 
