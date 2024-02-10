@@ -1,5 +1,5 @@
+import { useThemeContext } from '@/hooks/useThemeContext'
 import { ButtonHTMLAttributes } from 'react'
-import { useThemeContext } from '../../../hooks/useThemeContext'
 import * as ButtonStyles from './styles'
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -20,11 +20,14 @@ export const Button = ({
 }: ButtonProps) => {
   const themeContext = useThemeContext()
   const ChosenButton = variantComponents[variant] || ButtonStyles.PrimaryButton
+  if (!themeContext || !themeContext.webSettings) {
+    return null
+  }
 
   return (
     <ChosenButton
-      $primaryColour={themeContext.primaryColour}
-      $primaryColourHover={themeContext.primaryColourHover}
+      $primaryColour={themeContext.webSettings.primaryColour}
+      $primaryColourHover={themeContext.webSettings.primaryColourHover}
       {...props}
       className={className}
     />

@@ -1,5 +1,5 @@
-import { useOrderContext } from '../../../hooks/useOrderContext'
-import { Button } from '../../atoms/Button'
+import { useOrderContext } from '@/hooks/useOrderContext'
+import { Button } from '@components/atoms/Button'
 import { Actions } from './styles'
 export const FooterActions = () => {
   const { orderItems, isBasketOpen, toggleBasket } = useOrderContext()

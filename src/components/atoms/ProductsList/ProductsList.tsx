@@ -1,9 +1,9 @@
+import { useOrderContext } from '@/hooks/useOrderContext'
+import { useThemeContext } from '@/hooks/useThemeContext'
+import { MenuItem } from '@/types/apiTypes'
+import { formatCurrency } from '@/utils/formatCurrency'
+import { Modal } from '@components/atoms/Modal'
 import { useState } from 'react'
-import { useOrderContext } from '../../../hooks/useOrderContext'
-import { useThemeContext } from '../../../hooks/useThemeContext'
-import { MenuItem } from '../../../types/apiTypes'
-import { formatCurrency } from '../../../utils/formatCurrency'
-import { Modal } from '../Modal'
 import { ProductsListStyle } from './styles'
 
 interface ProductsListProps {
@@ -23,9 +23,11 @@ export const ProductsList = ({ items }: ProductsListProps) => {
     setIsModalVisible(false)
     setSelectedOrder(null)
   }
-
+  if (!themeContext || !themeContext.webSettings) {
+    return null
+  }
   return (
-    <ProductsListStyle $primaryColour={themeContext.primaryColour}>
+    <ProductsListStyle $primaryColour={themeContext.webSettings.primaryColour}>
       <Modal visible={isModalVisible} onClose={handleCloseModal} />
       <div className="product-items">
         <div className="item">

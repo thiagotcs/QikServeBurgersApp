@@ -1,6 +1,6 @@
+import { MenuItem } from '@/types/apiTypes'
+import { OrderContextProps, OrderProviderProps } from '@/types/orderTypes'
 import { FC, createContext, useState } from 'react'
-import { MenuItem } from '../types/apiTypes'
-import { OrderContextProps, OrderProviderProps } from '../types/orderTypes'
 
 export const OrderContext = createContext<OrderContextProps | undefined>(
   undefined,

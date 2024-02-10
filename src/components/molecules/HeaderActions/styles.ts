@@ -2,16 +2,16 @@ import styled from 'styled-components'
 
 interface HeaderContainerProps {
   $bannerImage: string
-  isBasketOpen?: boolean
+  $isBasketOpen?: boolean
 }
 interface TopBarProps {
   $navBackgroundColour?: string
-  isBasketOpen?: boolean
+  $isBasketOpen?: boolean
 }
 
 export const TopBarStyles = styled.div<TopBarProps>`
-  background-color: ${({ isBasketOpen, $navBackgroundColour }) =>
-    isBasketOpen ? '#dadada' : $navBackgroundColour};
+  background-color: ${({ $isBasketOpen, $navBackgroundColour }) =>
+    $isBasketOpen ? '#dadada' : $navBackgroundColour};
 
   @media only screen and (max-width: 768px) {
     font-size: 14px;
@@ -25,7 +25,7 @@ export const TopBarStyles = styled.div<TopBarProps>`
       line-height: 21px;
       letter-spacing: 0.75px;
       text-align: center;
-      color: ${({ isBasketOpen }) => (isBasketOpen ? '#121212' : '#fff')};
+      color: ${({ $isBasketOpen }) => ($isBasketOpen ? '#121212' : '#fff')};
       margin: 0 auto;
     }
   }
@@ -40,7 +40,7 @@ export const IconContainer = styled.div<TopBarProps>`
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    color: ${({ isBasketOpen }) => (isBasketOpen ? '#121212' : '#fff')};
+    color: ${({ $isBasketOpen }) => ($isBasketOpen ? '#121212' : '#fff')};
     padding-top: 23px;
   }
 `
@@ -53,7 +53,7 @@ export const HeaderContainer = styled.header<HeaderContainerProps>`
   max-width: 100%;
   max-height: 100%;
   @media only screen and (max-width: 768px) {
-    display: ${({ isBasketOpen }) => (isBasketOpen ? 'none' : 'flex')};
+    display: ${({ $isBasketOpen }) => ($isBasketOpen ? 'none' : 'flex')};
   }
 `
 

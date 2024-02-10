@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Radio } from '../../atoms/Radio'
+import { Radio } from '@components/atoms/Radio'
 
 interface RadioGroupProps {
   name: string

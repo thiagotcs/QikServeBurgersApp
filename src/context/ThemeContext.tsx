@@ -1,15 +1,18 @@
+import { useFetch } from '@/hooks/useFetch'
+import { restaurantApi } from '@/services/api'
+import { RestaurantDetails, WebSettings } from '@/types/apiTypes'
 import { ReactNode, createContext, useEffect, useState } from 'react'
-import { useFetch } from '../hooks/useFetch'
-import { restaurantApi } from '../services/api'
-import { WebSettings } from '../types/apiTypes'
 
 interface ThemeContextProps {
   children: ReactNode
+  isLoading: boolean
+  error: Error | null
 }
 
-export interface ThemeContextValues extends WebSettings {
+export interface ThemeContextValues {
   isLoading: boolean
   error: string | null
+  webSettings?: WebSettings
 }
 
 export const ThemeContext = createContext<ThemeContextValues | undefined>(
@@ -17,35 +20,26 @@ export const ThemeContext = createContext<ThemeContextValues | undefined>(
 )
 
 export const ThemeProvider = ({ children }: ThemeContextProps) => {
-  const { apiData, error, isLoading } = useFetch<WebSettings>(restaurantApi)
+  const { apiData, error } = useFetch<RestaurantDetails>(restaurantApi)
 
   const [themeValues, setThemeValues] = useState<ThemeContextValues>({
-    navBackgroundColour: '',
-    primaryColour: '',
-    primaryColourHover: '',
-    bannerImage: '',
     isLoading: true,
     error: null,
+    webSettings: undefined,
   })
 
   useEffect(() => {
     if (apiData) {
       setThemeValues({
-        navBackgroundColour: apiData.webSettings.navBackgroundColour,
-        primaryColour: apiData.webSettings.primaryColour,
-        primaryColourHover: apiData.webSettings.primaryColourHover,
-        bannerImage: apiData.webSettings.bannerImage,
         isLoading: false,
         error: null,
+        webSettings: apiData.webSettings,
       })
     } else if (error) {
       setThemeValues({
-        navBackgroundColour: '',
-        primaryColour: '',
-        primaryColourHover: '',
-        bannerImage: '',
+        ...themeValues,
         isLoading: false,
-        error: 'Failed to fetch theme data',
+        error: 'Falha ao buscar os dados do tema',
       })
     }
   }, [apiData, error])

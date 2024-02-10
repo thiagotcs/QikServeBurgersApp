@@ -16,7 +16,6 @@ export const useFetch = <T>(
     apiData: null,
     error: null,
   })
-
   useEffect(() => {
     const fetchData = async () => {
       try {

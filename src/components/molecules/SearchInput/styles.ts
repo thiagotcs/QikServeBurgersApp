@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 interface SearchInputProps {
-  isBasketOpen?: boolean
+  $isBasketOpen?: boolean
 }
 export const SearchInputStyled = styled.div<SearchInputProps>`
   background-color: #f8f9fa;
@@ -9,7 +9,7 @@ export const SearchInputStyled = styled.div<SearchInputProps>`
   margin: 0 auto;
 
   @media only screen and (max-width: 768px) {
-    display: ${({ isBasketOpen }) => (isBasketOpen ? 'none' : 'block')};
+    display: ${({ $isBasketOpen }) => ($isBasketOpen ? 'none' : 'block')};
     padding: 16px;
   }
 `

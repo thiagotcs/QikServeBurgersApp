@@ -1,10 +1,10 @@
+import { useFetch } from '@/hooks/useFetch'
+import { useMenuContext } from '@/hooks/useMenuContext'
+import { menuApi } from '@/services/api'
+import { ApiResponse } from '@/types/apiTypes'
+import { CategoryCard } from '@components/molecules/CategoryCard'
 import { Loader } from 'lucide-react'
-import { useFetch } from '../../../hooks/useFetch'
-import { useMenuContext } from '../../../hooks/useMenuContext'
-import { menuApi } from '../../../services/api'
-import { CategoryCard } from '../../molecules/CategoryCard'
 import { CategoryCardStyled, LoaderStyled } from './styles'
-import { ApiResponse } from '../../../types/apiTypes'
 
 interface ImageProps {
   id: number

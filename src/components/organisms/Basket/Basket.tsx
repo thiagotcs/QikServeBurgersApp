@@ -1,7 +1,7 @@
+import { useOrderContext } from '@/hooks/useOrderContext'
+import { formatCurrency } from '@/utils/formatCurrency'
+import { Button } from '@components/atoms/Button'
 import { Minus, Plus } from 'lucide-react'
-import { useOrderContext } from '../../../hooks/useOrderContext'
-import { formatCurrency } from '../../../utils/formatCurrency'
-import { Button } from '../../atoms/Button'
 import {
   Actions,
   BasketStyled,
@@ -24,7 +24,7 @@ export const Basket = () => {
 
   return (
     <BasketStyled isEmpty={isCartEmpty}>
-      <StyledHeader isBasketOpen={isBasketOpen}>
+      <StyledHeader $isBasketOpen={isBasketOpen}>
         <h1>Carrinho</h1>
       </StyledHeader>
       <OrdersContainer>

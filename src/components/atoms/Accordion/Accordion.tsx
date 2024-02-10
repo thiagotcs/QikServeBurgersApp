@@ -1,7 +1,7 @@
 import { FC, useCallback, useContext } from 'react'
-import { MenuContext, MenuContextProps } from '../../../context/MenuContext'
-import { AccordionContent } from '../AccordionContent'
-import { AccordionHeader } from '../AccordionHeader'
+import { MenuContext, MenuContextProps } from '@/context/MenuContext'
+import { AccordionContent } from '@components/atoms/AccordionContent'
+import { AccordionHeader } from '@components/atoms/AccordionHeader'
 import { AccordionProps } from './interfaces'
 import { AccordionStyled } from './styles'
 

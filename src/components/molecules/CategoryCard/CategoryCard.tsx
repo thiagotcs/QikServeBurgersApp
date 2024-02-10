@@ -1,6 +1,6 @@
-import { useThemeContext } from '../../../hooks/useThemeContext'
-import { ImageCategories } from '../../atoms/ImageCategories'
-import { TextCategories } from '../../atoms/TextCategories'
+import { useThemeContext } from '@/hooks/useThemeContext'
+import { ImageCategories } from '@components/atoms/ImageCategories'
+import { TextCategories } from '@components/atoms/TextCategories'
 import { CardStyled } from './styles'
 
 interface CategoryCardProps {
@@ -15,8 +15,14 @@ export const CategoryCard = ({
   onClick,
 }: CategoryCardProps) => {
   const themeContext = useThemeContext()
+  if (!themeContext || !themeContext.webSettings) {
+    return null
+  }
   return (
-    <CardStyled onClick={onClick} $primaryColour={themeContext.primaryColour}>
+    <CardStyled
+      onClick={onClick}
+      $primaryColour={themeContext.webSettings.primaryColour}
+    >
       <ImageCategories src={imageSrc} alt={categoryName} />
       <TextCategories text={categoryName} />
     </CardStyled>

@@ -1,10 +1,10 @@
+import { useOrderContext } from '@/hooks/useOrderContext'
+import { useThemeContext } from '@/hooks/useThemeContext'
+import { SettingsTabs } from '@components/atoms/SettingsTabs/SettingsTabs'
 import { AlignJustify, X } from 'lucide-react'
 import { ReactNode } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { StyleSheetManager } from 'styled-components'
-import { useOrderContext } from '../../../hooks/useOrderContext'
-import { useThemeContext } from '../../../hooks/useThemeContext'
-import { SettingsTabs } from '../../atoms/SettingsTabs/SettingsTabs'
 import { HeaderContainer, IconContainer, TopBarStyles } from './styles'
 
 interface ForwardPropsProviderProps {
@@ -23,14 +23,18 @@ export const HeaderActions = () => {
     </StyleSheetManager>
   )
 
+  if (!themeContext || !themeContext.webSettings) {
+    return null
+  }
+
   return (
     <>
       <ForwardPropsProvider>
         <TopBarStyles
-          $navBackgroundColour={themeContext.navBackgroundColour}
-          isBasketOpen={isBasketOpen}
+          $navBackgroundColour={themeContext.webSettings.navBackgroundColour}
+          $isBasketOpen={isBasketOpen}
         >
-          <IconContainer isBasketOpen={isBasketOpen}>
+          <IconContainer $isBasketOpen={isBasketOpen}>
             <h1>{isBasketOpen ? 'Basket' : 'Menu'}</h1>
             {isBasketOpen ? (
               <X width={16} height={16} />
@@ -43,8 +47,8 @@ export const HeaderActions = () => {
       </ForwardPropsProvider>
       {!(isMobile && isBasketOpen) && (
         <HeaderContainer
-          $bannerImage={themeContext.bannerImage}
-          isBasketOpen={isBasketOpen}
+          $bannerImage={themeContext.webSettings.bannerImage}
+          $isBasketOpen={isBasketOpen}
         />
       )}
     </>

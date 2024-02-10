@@ -1,11 +1,11 @@
+import closeIcon from '@/assets/close.png'
+import { useOrderContext } from '@/hooks/useOrderContext'
+import { formatCurrency } from '@/utils/formatCurrency'
+import { Button } from '@components/atoms/Button'
+import { Radio } from '@components/atoms/Radio'
+import { RadioGroup } from '@components/molecules/RadioGroup'
 import { Minus, Plus } from 'lucide-react'
 import { useEffect } from 'react'
-import closeIcon from '../../../assets/close.png'
-import { useOrderContext } from '../../../hooks/useOrderContext'
-import { formatCurrency } from '../../../utils/formatCurrency'
-import { RadioGroup } from '../../molecules/RadioGroup'
-import { Button } from '../Button'
-import { Radio } from '../Radio'
 import { Actions, ModalBody, OrderDetails, Overlay } from './styles'
 interface OrderModalProps {
   visible: boolean

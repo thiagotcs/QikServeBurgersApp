@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 interface BasketStyledProps {
-  isBasketOpen: boolean
+  $isBasketOpen: boolean
 }
 export const WrapContentStyled = styled.div`
   justify-content: space-between;
@@ -24,11 +24,11 @@ export const WrapContentStyled = styled.div`
 `
 export const MainContentStyled = styled.div<BasketStyledProps>`
   @media only screen and (max-width: 768px) {
-    display: ${({ isBasketOpen }) => (isBasketOpen ? 'none' : 'block')};
+    display: ${({ $isBasketOpen }) => ($isBasketOpen ? 'none' : 'block')};
   }
 `
 export const BasketStyled = styled.div<BasketStyledProps>`
   @media only screen and (max-width: 768px) {
-    display: ${({ isBasketOpen }) => (isBasketOpen ? 'flex' : 'none')};
+    display: ${({ $isBasketOpen }) => ($isBasketOpen ? 'flex' : 'none')};
   }
 `

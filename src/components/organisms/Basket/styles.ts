@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 interface BasketStyledProps {
   isEmpty?: boolean
-  isBasketOpen?: boolean
+  $isBasketOpen?: boolean
 }
 
 export const BasketStyled = styled.div.withConfig({
@@ -50,7 +50,7 @@ export const BasketStyled = styled.div.withConfig({
 `
 export const StyledHeader = styled.header<BasketStyledProps>`
   @media only screen and (max-width: 768px) {
-    display: ${({ isBasketOpen }) => (isBasketOpen ? 'none' : 'block')};
+    display: ${({ $isBasketOpen }) => ($isBasketOpen ? 'none' : 'block')};
   }
 `
 export const OrdersContainer = styled.div`

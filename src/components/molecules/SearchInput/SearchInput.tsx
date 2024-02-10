@@ -1,13 +1,13 @@
 import { Search } from 'lucide-react'
-import * as Input from '../../atoms/Input'
+import { useOrderContext } from '@/hooks/useOrderContext'
+import * as Input from '@components/atoms/Input'
 import { SearchInputStyled } from './styles'
-import { useOrderContext } from '../../../hooks/useOrderContext'
 
 export const SearchInput = () => {
   const { isBasketOpen } = useOrderContext()
 
   return (
-    <SearchInputStyled isBasketOpen={isBasketOpen}>
+    <SearchInputStyled $isBasketOpen={isBasketOpen}>
       <Input.Root>
         <Input.Prefix>
           <Search />
