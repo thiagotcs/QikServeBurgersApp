@@ -1,6 +1,6 @@
 
 
-<p style="text-align: center;">
+<p align = "center">
   <img src="https://camo.githubusercontent.com/bf2ee1872641c33f8c9cf0df9cad0e4fc271d1a8c1828f0aefe1048523bda0ec/68747470733a2f2f71696b73657276652e636f6d2f77702d636f6e74656e742f75706c6f6164732f323032312f31312f426c75652d4c6f676f2e706e67" alt="Logo" />
 </p>
 
@@ -11,63 +11,109 @@
     <img src = "https://img.shields.io/badge/Project%20Lang-Portugueses%20BR-green" alt = "Project Lang">
 </p>
 
-# Nome do Projeto QikServe
+# 🍔 QikServe Burgers App
 
 ## 📝 Descrição
 
 Este projeto é uma implementação de teste para a posição de desenvolvedor frontend na QikServe. Ele demonstra uma aplicação de pedido de alimentos com funcionalidades de adicionar itens ao carrinho, alterar quantidades, calcular totais e se adapta para dispositivos móveis e desktop.
 
-## Começando
+## 💻 Tecnologias Utilizadas
 
-### Pré-requisitos
+- React: Biblioteca JavaScript para construção de interfaces de usuário
+- TypeScript: Superset de JavaScript que adiciona tipagem estática
+- Vite: Ferramenta de construção front-end extremamente rápida.
+- Axios: Cliente HTTP baseado em promessas para fazer requisições
+- Context API: Contexto para gerenciamento de estado simples.
+- Styled Components: Biblioteca para estilização de componentes
+- Lucide React: Biblioteca de ícones
+- polished: Conjunto de ferramentas para estilização.
+E outras bibliotecas auxiliares, etc.
 
--   Node.js 
--   Yarn ou npm
+## 📁 Estrutura de Pastas
 
-### Instalação
+- src/assets: Imagens e fontes.
+- src/components: Componentes reutilizáveis.
+- src/pages: Páginas da aplicação.
+- src/services: Serviços para comunicação com APIs.
+- src/context: Gerenciamento de estados.
+- src/styles: Estilos globais da aplicação.
+- src/utils: Funções utilitárias.
 
-Para instalar as dependências, execute o seguinte comando no diretório raiz do projeto:
+## 🚀 Instalação e Execução
 
-- yarn install
-- npm install` 
+Para instalar e executar o projeto localmente, siga os passos abaixo:
 
-### Executando o projeto
+1. Clone o repositório:
 
-Para iniciar o projeto, execute:
+```js
+git clone https://github.com/thiagotcs/test-QikServe-app.git
+```
 
+2. Entre no diretório do projeto:
+
+```js
+cd test-QikServe-app
+```
+
+3. Instale as dependências:
+
+```js
+yarn install
+```
+
+4.Execute a aplicação em modo de desenvolvimento:
+- [x] Execute `yarn backend` para iniciar o servidor JSON.
+```js
+yarn backend
+```
+- [x] Execute `yarn dev` para iniciar a aplicação React.
+```js
 yarn dev
+```
 
+5. Acesse http://localhost:5173 no seu navegador.
 Isso iniciará o servidor de desenvolvimento e abrirá o aplicativo no navegador padrão.
 
-## Suposições e Escolhas
+## ⚙️ Funcionalidades
+
+- [x] **Adicionar ao Carrinho**: Capacidade de adicionar itens ao carrinho de compras.
+- [x] **Alterar Quantidades**: Função para alterar a quantidade de itens no carrinho.
+- [x] **Calcular Totais**: O aplicativo calcula automaticamente o total do pedido.
+- [x] **Visualização detalhada**: de cada Pedido.
+- [x] **Navegação Móvel**: ajustes de layout para dispositivos móveis.
+- [x] **Componentes de carregamento**: (loading) para melhorar a experiência durante o carregamento dos dados.
+
+## 🏗️ Estrutura do Projeto
 
 -   **Design Pattern**: Optei por utilizar o Atomic Design para estruturar os componentes, visando modularidade e reutilização.
 -   **Gerenciamento de Estado**: Utilizei Context API do React para gerenciamento de estado, devido à sua simplicidade e eficácia em aplicações de pequeno a médio porte.
 -   **Estilização**: Escolhi `styled-components` para a estilização para manter os estilos próximos aos componentes e aproveitar os recursos de estilos dinâmicos.
 -   **Responsividade**: A aplicação foi desenvolvida pensando em uma experiência responsiva, adequando-se a diferentes tamanhos de tela, desde dispositivos móveis a desktops.
 
-## Funcionalidades Implementadas
-
-1.  **Adicionar ao Carrinho**: Capacidade de adicionar itens ao carrinho de compras.
-2.  **Alterar Quantidades**: Função para alterar a quantidade de itens no carrinho.
-3.  **Calcular Totais**: O aplicativo calcula automaticamente o total do pedido.
-4.  **Navegação Móvel**: ajustes de layout para dispositivos móveis.
-
-## Sobre Mim
-
-Sou um Desenvolvedor Frontend com uma paixão profunda por criar experiências digitais cativantes. Ao longo de mais de dez anos de carreira, especializei-me em ReactJS e React Native, habilidades que me permitem desenvolver interfaces responsivas e imersivas. Meu domínio em JavaScript moderno e NodeJS me habilita a oferecer soluções criativas e eficientes.
-
-Minha experiência inclui trabalhar em projetos variados, desde otimizar processos em aplicativos corporativos até desenvolver interfaces atraentes com ferramentas como Bootstrap4, Tailwind CSS e Chakra UI. Prezo pela qualidade do código e busco sempre a excelência em meus testes, utilizando Jest e React Testing Library.
-
-Graduado em Sistemas para Internet, tenho uma sólida base teórica e uma abordagem técnica apurada. Estou sempre buscando novos desafios e pronto para elevar a qualidade de seus projetos. Se precisar de um Desenvolvedor Frontend dedicado e inovador, estou disponível para conversar sobre suas necessidades e como posso agregar valor ao seu negócio.
 
 
-## Contato
+## 💾 Commits
 
--   **Email**: thiagotcs.dev@gmail.com
--   **LinkedIn**: https://www.linkedin.com/in/thiagocarvalhofrontend/
--   **GitHub**: https://github.com/thiagotcs
+Os commits neste projeto seguem o fluxo semântico, proporcionando clareza e consistência no histórico de desenvolvimento:
 
+- Chore: Atualizações de tarefas e manutenções que não modificam a aplicação.
+- Feat: Adiciona novas funcionalidades ou modificações significativas.
+- Refactor: Refatorações no código que podem melhorar a estrutura interna sem necessariamente alterar o comportamento externo da aplicação.
+- Style: Alterações relacionadas apenas com estilização.
+- Docs: Atualizações na documentação.
+- Test: Adição ou modificação de testes.
+
+## 👥 Contribuição
+
+Contribuições são sempre bem-vindas. Para contribuir, faça um fork do repositório, crie uma branch para sua feature ou correção de bug, faça as alterações e abra um pull request.
+
+## 📞 Contato
+
+- **Email**: thiagotcs.dev@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/thiagocarvalhofrontend/
+- **GitHub**: https://github.com/thiagotcs
+
+## 📺 Preview
 <img width="1680" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/6a437cc4-245a-4443-932f-7dad716449a8">
 <img width="1680" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/835bae3b-dffc-46ab-9dd2-540e3356d99d">
 <img width="1680" alt="image" src="https://github.com/thiagotcs/test-QikServe-app/assets/53226663/a1fc4123-8594-4b0d-aa84-d4cab762e566">
